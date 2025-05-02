@@ -1,10 +1,10 @@
 [metadata]
-name = publications 
+name = publications
 version = 0.1.0a0
 description = Publications app
 long_description = file: README.md
 long_description_content_type = text/markdown
-url = 
+url =
 author = Fabio Lopes
 author_email = fabio.lopes@empa.ch
 license = MIT
@@ -15,8 +15,8 @@ classifiers =
     Programming Language :: Python :: 3
     Programming Language :: Python :: 3 :: Only
 project_urls =
-    Bug Tracker = 
-    Documentation = 
+    Bug Tracker =
+    Documentation =
     Logo = https://raw.githubusercontent.com/aiidalab/aiidalab-qe/master/miscellaneous/logos/QE.jpg
 
 [options]
