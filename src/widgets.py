@@ -52,7 +52,6 @@ class SummaryObjectWidget(ipw.VBox):
         self.structure_sketch_image_file = "./data/images/white_screen.jpg"
         
         self.structure_sketch_imagebox = utils.Image(
-            value = utils.read_file(self.structure_sketch_image_file),
             layout = ipw.Layout(border = 'solid 1px #cccccc', width = '250px', height = '250px')
         )
         
@@ -331,7 +330,6 @@ class SimulationObjectWidget(ipw.VBox):
         )
         
         self.ldos_orbital_maps_imagebox = utils.Image(
-            value = utils.read_file("./data/images/white_screen.jpg"),
             layout = ipw.Layout(border = 'solid 1px #cccccc', width = '250px', height = '250px')
         )
         
@@ -666,7 +664,6 @@ class ExperimentObjectWidget(ipw.VBox):
         self.precursor_image_output = utils.Output()
         
         self.precursor_imagebox = utils.Image(
-            value = utils.read_file("./data/images/white_screen.jpg"),
             layout = ipw.Layout(border = 'solid 1px #cccccc', width = '250px', height = '250px')
         )
         
