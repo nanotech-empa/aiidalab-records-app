@@ -1080,7 +1080,7 @@ class RecordObjectWidget(ipw.VBox):
 
             ldos_orbital_maps_widgets = []
             ldos_orbital_maps = simulation_content.get("ldos_orbital_maps", [])
-            for idx, ldos_orbital_map in enumerate(ldos_orbital_maps):
+            for _, ldos_orbital_map in enumerate(ldos_orbital_maps):
                 file = ldos_orbital_map["file"]
                 caption = ldos_orbital_map["caption"]
 
@@ -1173,7 +1173,7 @@ class RecordObjectWidget(ipw.VBox):
             # STM images
             relevant_stm_image_widgets = []
             relevant_stm_images = experiment_content.get("relevant_stm_images", [])
-            for idx, relevant_stm_image in enumerate(relevant_stm_images):
+            for _, relevant_stm_image in enumerate(relevant_stm_images):
                 file = relevant_stm_image["file"]
                 caption = relevant_stm_image["caption"]
 
@@ -1197,7 +1197,7 @@ class RecordObjectWidget(ipw.VBox):
             # STS images
             relevant_sts_image_widgets = []
             relevant_sts_images = experiment_content["relevant_sts_images"]
-            for idx, relevant_sts_image in enumerate(relevant_sts_images):
+            for _, relevant_sts_image in enumerate(relevant_sts_images):
                 file = relevant_sts_image["file"]
                 caption = relevant_sts_image["caption"]
 
