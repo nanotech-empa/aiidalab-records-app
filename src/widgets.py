@@ -1042,13 +1042,13 @@ class RecordObjectWidget(ipw.VBox):
             )
 
             band_energies_data = simulation_content["band_energies"]
-            for idx, band_energy in enumerate(band_energies_data):
+            for band_idx, band_energy in enumerate(band_energies_data):
                 index = str(band_energy["index"])
                 label = band_energy.get("label", "")
                 e_ef_ev = str(band_energy["e_ef_ev"])
                 effective_mass_m_e = str(band_energy.get("effective_mass_m_e", ""))
 
-                if idx > 0:
+                if band_idx > 0:
                     band_energies_grid_box_items = list(
                         simulation_object.band_energies_gridbox.children
                     )
@@ -1064,7 +1064,7 @@ class RecordObjectWidget(ipw.VBox):
                         band_energies_grid_box_items
                     )
 
-                table_idx = (idx + 1) * 4
+                table_idx = (band_idx + 1) * 4
                 simulation_object.band_energies_gridbox.children[table_idx].value = (
                     index
                 )
@@ -1124,7 +1124,7 @@ class RecordObjectWidget(ipw.VBox):
             )
 
             band_energies_data = experiment_content["band_energies"]
-            for idx, band_energy in enumerate(band_energies_data):
+            for band_idx, band_energy in enumerate(band_energies_data):
                 index = str(band_energy["index"])
                 label = band_energy.get("label", "")
                 e_ef_ev = str(band_energy["e_ef_ev"])
@@ -1132,7 +1132,7 @@ class RecordObjectWidget(ipw.VBox):
                 effective_mass_m_e = str(band_energy.get("effective_mass_m_e", ""))
                 error_m_e = str(band_energy.get("error_m_e", ""))
 
-                if idx > 0:
+                if band_idx > 0:
                     band_energies_grid_box_items = list(
                         experiment_object.band_energies_gridbox.children
                     )
@@ -1150,7 +1150,7 @@ class RecordObjectWidget(ipw.VBox):
                         band_energies_grid_box_items
                     )
 
-                table_idx = (idx + 1) * 6
+                table_idx = (band_idx + 1) * 6
                 experiment_object.band_energies_gridbox.children[table_idx].value = (
                     index
                 )
