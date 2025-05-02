@@ -17,7 +17,7 @@ classifiers =
 project_urls =
     Bug Tracker =
     Documentation =
-    Logo = https://raw.githubusercontent.com/aiidalab/aiidalab-qe/master/miscellaneous/logos/QE.jpg
+    Logo =
 
 [options]
 
