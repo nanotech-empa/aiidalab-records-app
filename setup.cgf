@@ -1,7 +1,7 @@
 [metadata]
-name = publications
+name = datarecords
 version = 0.1.0a0
-description = Publications app
+description = Data records registry app
 long_description = file: README.md
 long_description_content_type = text/markdown
 url =
