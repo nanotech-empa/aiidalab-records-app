@@ -1120,7 +1120,7 @@ class RecordObjectWidget(ipw.VBox):
             experiment_object.substrate_textbox.value = experiment_content["substrate"]
             experiment_object.gap_ev_textbox.value = str(experiment_content["gap_ev"])
             experiment_object.spin_excitation_energy_ev_textbox.value = str(
-                experiment_content["spin_excitation_energy_ev"]
+                experiment_content.get("spin_excitation_energy_ev", "")
             )
 
             band_energies_data = experiment_content["band_energies"]
