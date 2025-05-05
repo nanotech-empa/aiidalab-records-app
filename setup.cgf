@@ -17,7 +17,7 @@ classifiers =
 project_urls =
     Bug Tracker =
     Documentation =
-    Logo =
+    Logo = https://raw.githubusercontent.com/nanotech-empa/aiidalab-records-app/main/logo.jpg
 
 [options]
 
