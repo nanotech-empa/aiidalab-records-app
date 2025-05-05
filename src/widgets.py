@@ -1014,7 +1014,7 @@ class RecordObjectWidget(ipw.VBox):
         ]
 
         # Simulations
-        simulations_data = record_content["simulations"]
+        simulations_data = record_content.get("simulations", [])
         simulations_objects = []
         for idx, simulation_content in enumerate(simulations_data):
             simulation_object = SimulationObjectWidget(self.simulations_accordion, idx)
