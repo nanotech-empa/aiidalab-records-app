@@ -29,9 +29,6 @@ python_requires = >=3.8
 
 [aiidalab]
 title = nanotech@datarecords
-description = Data records registry
-categories =
-    quantum
 
 [flake8]
 ignore =
